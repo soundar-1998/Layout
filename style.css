@@ -1,0 +1,22 @@
+body{
+    margin-top: 90px;
+}
+ body::before{
+    content:'XS';
+    color: orangered;
+    font-size: 30px;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+ }
+
+ @media(min-width:576px){
+    body::before{
+        content:'SM';
+    }
+ }
+ @media(min-width:992px){
+    body::before{
+content:'MD';
+    }
+ }
